@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1, 6;
+    color: #333;
+}
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid cyan;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background:cyan;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+button:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+/* container */
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.section{
+    padding-top: 80px;
+
+
+}
+.sectione{
+    padding-top: 25px;
+    background-color:  #999;
+}
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 1000px;
+    position: relative;
+    background-color: #999 ;
+    -webkit-beckgraund-size: cover;
+    background-size: cover;
+}
+
+.intro_inner {
+    padding-top: 100px;
+    height: 1000px;
+    width: 1000px;
+    max-width: 1000px;
+    margin: 0 top;
+    text-align: center;
+    background-color: white;
+}
+
+.intro_title {
+    font-family: 'Kaushan Script', cursive;
+    color:chocolate;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 70px auto;
+    background-color: white ;
+}
+
+.intro_suptitle {
+    
+    margin-bottom: 60px;
+    font-size: 50px;
+    color:chartreuse;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* header */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: royalblue;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header_logo {
+    margin: 15px;
+    font-size: 45px;
+    font-weight: 700;
+    color: orangered;
+}
+
+
+/* nav */
+
+.nav {
+    margin-top: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_linck {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    color: red;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+
+
+.nav_linck:hover {
+    color: orange;
+}
+
+.nav_linck:hover::after {
+    opacity: 1;
+}
+
+/* Botton */
+
+.btn {
+    margin: 50px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    border: 2px solid green;
+    font-size: 15px;
+    font-weight: 700;
+    color: rebeccapurple;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: green;
+    color: yellow;
+}
+
+
+
+/* Servise */
+
+.services {
+    display: flex;
+    background-color: white;
+}
+
+.services_item {
+    flex: 1 1 0;
+    padding-left: 70px;
+    padding-right: 20px;
+    position: relative;
+    padding: 70px;
+}
+
+
+
+.services_title {
+    margin-bottom: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Works */
+
+.works {
+    display: flex;
+}
+
+.works_col {
+    flex: 1 1 0;
+}
+
+.works_item {
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works_item:hover .works_image{
+    opacity: .1;
+}
+
+
+.works_item:hover .works_info{
+    opacity: .1;
+}
+
+.works_image {
+    transition: opacity .2s linear;
+    display: block;
+}
+
+.works_info{
+    width: 100%;
+    padding: 0 15;
+    
+    text-align: center;
+    color: #fff; 
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate3d(0,-50%,0);
+    transition: opacity .2s linear ;
+}
+
+.works_title{
+   
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+.works_text{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
